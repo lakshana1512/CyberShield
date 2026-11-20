@@ -1,111 +1,150 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>CyberShield | Digital Safety</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-    <h2>🛡 CYBERSHIELD</h2>
-    <p>All-in-One Digital Safety Platform</p>
-</header>
-<nav class="navbar">
-    <a href="#">Home</a>
-    <a href="#modules">Modules</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-</nav>
+    <!-- HEADER -->
+    <header>
+        <h2>🛡 CYBERSHIELD</h2>
+        <p>All-in-One Digital Safety Platform</p>
+    </header>
 
-<section class="hero">
-    <img src="images/cybershield-logo.png"
-         alt="CyberShield Logo"
-         class="hero-logo">
-         <p>Detect Threats. Understand Risks. Protect Yourself.</p>
-</section>
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#modules">Modules</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-<main id="modules">
-    <h2>Choose Your Security Module</h2>
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <img src="cybershield-logo.png"
+             alt="CyberShield Logo"
+             class="hero-logo">
 
-    <div class="modules">
-        <div class="card" onclick="openModule('message')">
-            <h3>📩 Scam Message Checker</h3>
-            <p>Check suspicious SMS and WhatsApp messages.</p>
-        </div>
-
-        <div class="card" onclick="openModule('voice')">
-            <h3>🎙 Voice Scam Awareness</h3>
-            <p>Learn to identify possible AI voice scam warning signs.</p>
-        </div>
-
-        <div class="card" onclick="openModule('job')">
-            <h3>💼 Job & Website Checker</h3>
-            <p>Review suspicious job offers and website links.</p>
-        </div>
-        <div class="card" onclick="openModule('link')">
-    <h3>🔗 Suspicious Link Checker</h3>
-    <p>Check suspicious website URLs and identify warning signs.</p>
-</div>
-
-        <div class="card" onclick="openModule('upi')">
-            <h3>💳 UPI Safety Assistant</h3>
-            <p>Understand unsafe payment requests.</p>
-        </div>
-
-        <div class="card" onclick="openModule('identity')">
-            <h3>👤 Identity Misuse Support</h3>
-            <p>Get guidance about fake social media profiles.</p>
-        </div>
-    </div>
-
-    <section id="checker" class="checker">
-        <h2 id="moduleTitle">Security Check</h2>
-        <p id="moduleDescription">Enter suspicious content below.</p>
-
-        <textarea id="userInput"
-            placeholder="Paste your suspicious message here..."></textarea>
-
-        <button onclick="checkSafety()">CHECK SAFETY</button>
-
-        <div id="result"></div>
-        <div id="tamilResult"></div>
+        <p>Detect Threats. Understand Risks. Protect Yourself.</p>
     </section>
-</main>
-<section class="about" id="about">
-    <h2>About CyberShield</h2>
 
-    <p>
-        CyberShield is an all-in-one digital safety platform
-        designed to create awareness about online scams,
-        suspicious links, UPI fraud and identity misuse.
-        It helps users understand cyber risks and follow
-        safe digital practices.
-    </p>
-</section>
+    <!-- SECURITY MODULES -->
+    <main id="modules">
 
-<section class="disclaimer">
-    <h2>Important Disclaimer</h2>
+        <h2>Choose Your Security Module</h2>
 
-    <p>
-        CyberShield is an educational awareness prototype.
-        It uses basic rule-based checks to identify possible
-        warning signs. It cannot guarantee that a message,
-        website, job offer or transaction is safe or fraudulent.
-        Always verify information through official sources.
-    </p>
-</section>
-<section class="contact" id="contact">
-    <h2>Contact Us</h2>
-    <p>Have questions or suggestions about CyberShield?</p>
-    <p>Email: cybershield.support@gmail.com</p>
-</section>
-<footer>
-    <p>CyberShield © 2026 | Your Digital Safety Matters</p>
-</footer>
+        <div class="modules">
 
-<script src="script.js"></script>
+            <div class="card" onclick="openModule('message')">
+                <h3>📩 Scam Message Checker</h3>
+                <p>Check suspicious SMS and WhatsApp messages.</p>
+            </div>
+
+            <div class="card" onclick="openModule('voice')">
+                <h3>🎙 Voice Scam Awareness</h3>
+                <p>Learn to identify possible AI voice scam warning signs.</p>
+            </div>
+
+            <div class="card" onclick="openModule('job')">
+                <h3>💼 Job & Website Checker</h3>
+                <p>Review suspicious job offers and website links.</p>
+            </div>
+
+            <div class="card" onclick="openModule('link')">
+                <h3>🔗 Suspicious Link Checker</h3>
+                <p>Check suspicious website URLs and identify warning signs.</p>
+            </div>
+
+            <div class="card" onclick="openModule('upi')">
+                <h3>💳 UPI Safety Assistant</h3>
+                <p>Understand unsafe payment requests.</p>
+            </div>
+
+            <div class="card" onclick="openModule('identity')">
+                <h3>👤 Identity Misuse Support</h3>
+                <p>Get guidance about fake social media profiles.</p>
+            </div>
+
+        </div>
+
+        <!-- SECURITY CHECKER -->
+        <section id="checker" class="checker">
+
+            <h2 id="moduleTitle">Security Check</h2>
+
+            <p id="moduleDescription">
+                Enter suspicious content below.
+            </p>
+
+            <textarea id="userInput"
+                placeholder="Paste your suspicious message here..."></textarea>
+
+            <button onclick="checkSafety()">CHECK SAFETY</button>
+
+            <div id="result"></div>
+            <div id="tamilResult"></div>
+
+        </section>
+
+    </main>
+
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+
+        <h2>About CyberShield</h2>
+
+        <p>
+            CyberShield is an all-in-one digital safety platform
+            designed to create awareness about online scams,
+            suspicious links, UPI fraud and identity misuse.
+            It helps users understand cyber risks and follow
+            safe digital practices.
+        </p>
+
+    </section>
+
+    <!-- DISCLAIMER -->
+    <section class="disclaimer">
+
+        <h2>Important Disclaimer</h2>
+
+        <p>
+            CyberShield is an educational awareness prototype.
+            It uses basic rule-based checks to identify possible
+            warning signs. It cannot guarantee that a message,
+            website, job offer or transaction is safe or fraudulent.
+            Always verify information through official sources.
+        </p>
+
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+
+        <h2>Contact & Feedback</h2>
+
+        <p>
+            Have questions or suggestions about CyberShield?
+            Share your feedback through the project submission platform.
+        </p>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>CyberShield © 2026 | Your Digital Safety Matters</p>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
 </body>
 </html>
